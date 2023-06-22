@@ -4,7 +4,7 @@ import openai
 import loadWholeUserInput
 import BIDGPT
 
-OPENAI_API_KEY = BIDGPT.OPENAI_API_KEY
+OPENAI_API_KEY = st.secrets["openai_api_key"]
 openai.api_key = OPENAI_API_KEY
 
 
