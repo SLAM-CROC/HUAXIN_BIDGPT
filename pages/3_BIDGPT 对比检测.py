@@ -3,9 +3,8 @@ import streamlit as st
 import openai
 import loadInput
 import loadWholeUserInput
-import BIDGPT
 
-OPENAI_API_KEY = BIDGPT.st.secrets["openai_api_key"]
+OPENAI_API_KEY = st.secrets["openai_api_key"]
 openai.api_key = OPENAI_API_KEY
 
 
