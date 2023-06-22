@@ -7,7 +7,6 @@ st.set_page_config(
 
 st.write("# Welcome to BIDGPT! 👋")
 st.sidebar.success("请选择以上BIDGPT模块")
-OPENAI_API_KEY = st.sidebar.text_input("请输入您的API KEY：")
 
 st.markdown(
     """
