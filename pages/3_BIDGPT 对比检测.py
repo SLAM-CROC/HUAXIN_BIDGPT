@@ -56,7 +56,7 @@ with st.container():
                 if input_requirement is not None and user_input is not None:
                     conversation = [{'role': 'user', 'content': "这是一个招标要求文件的一部分：" + "\n" + input_requirement},
                                     {'role': 'assistant', 'content': "好的，请输入您与这部分招标要求对应的投标部分"},
-                                    {'role': 'user', 'content': "这是与之对应的投标部分：" + "\n" + user_input + "\n请根据招标要求，请检查投标文件是否符合招标文件的要求,有什么错误或者修改建议请具体提出"}]
+                                    {'role': 'user', 'content': "这是与之对应的投标部分：" + "\n" + user_input + "\n请根据招标要求，查找投标文件中的错误"}]
                     response = openai.ChatCompletion.create(
                         model='gpt-3.5-turbo-16k-0613',
                         messages=conversation
