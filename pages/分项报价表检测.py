@@ -83,7 +83,7 @@ if target_path != '' and answer_path != '':
                         {'role': 'assistant', 'content': "好的，请提供投标文件中的分项价目表"},
                         {'role': 'user', 'content': "这是投标文件中的分项价目表，请根据招标供货要求，找到分项价目表中各设备型号不符合招标要求的地方" + "\n" + question2}]
         response = openai.ChatCompletion.create(
-            model='gpt-3.5-turbo-16k-0613',
+            model='gpt-4-32k',
             messages=conversation
         )
         answer = response.choices[0].message.content
